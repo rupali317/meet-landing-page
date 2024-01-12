@@ -7,7 +7,7 @@
       name="description"
       content="Meet landing page where it is convenient for everyone to connect and chat"
     />
-    <meta name="keywords" content="HTML, CSS, Landing page, Group Chat" />
+    <meta name="keywords" content="HTML, CSS, Landing page, Group chat" />
     <meta name="author" content="Rupali Roy Choudhury" />
 
     <link
@@ -27,19 +27,24 @@
     <main>
       <section>
         <img
-          src="./assets//desktop/image-hero-left.png"
+          src="./assets/desktop/image-hero-left.png"
           alt=""
           width="191"
           height="153"
           role="presentation"
         />
         <img
-          src="./assets//desktop/image-hero-right.png"
+          src="./assets/desktop/image-hero-right.png"
           alt=""
           width="191"
           height="153"
           role="presentation"
         />
+        <picture>
+          <source srcset="./assets/desktop/image-hero-left.png" media="(min-width:80rem)">
+          <source srcset="./assets/desktop/image-hero-right.png" media="(min-width:80rem)">
+          <img src="./assets/tablet/image-hero.png" alt="" width="199" height="153" role="presentation" />
+        </picture>
         <div>
           <h1>Group Chat for Everyone</h1>
           <p>
@@ -47,7 +52,9 @@
             collaborate across any device.
           </p>
           <button>Download v1.3</button>
-          <button>What is it?</button>
+          <a role="button" aria-label="Learn more about meet" href=""
+            >What is it?</a
+          >
         </div>
       </section>
       <div>01</div>
