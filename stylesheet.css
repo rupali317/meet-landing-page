@@ -21,6 +21,8 @@
   --font-size-medium: 2.5rem; /* 40px */
   --font-size-l: 3rem; /* 48px */
   --font-size-xl: 4rem; /* 64px */
+  --font-weight-medium: 500;
+  --font-weight-black: 900;
   --line-height-xs: 1.625rem; /* 26px */
   --line-height-base: 2.25rem; /* 36px */
   --line-height-medium: 2.75rem; /* 44px */
@@ -126,19 +128,22 @@ img {
 @font-face {
   font-family: "Red Hat Display";
   src: url("./assets/fonts/RedHatDisplay-Black.ttf") format("truetype");
-  font-weight: 900;
+  font-weight: var(--font-weight-black);
   font-display: swap;
 }
 
 @font-face {
   font-family: "Red Hat Display";
   src: url("./assets/fonts/RedHatDisplay-Medium.ttf") format("truetype");
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   font-display: swap;
 }
 
 body {
   font-family: "Red Hat Display", sans-serif;
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  text-align: center;
 }
 
 header img {
