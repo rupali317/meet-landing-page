@@ -28,7 +28,6 @@
   --letter-spacing: 0.25rem; /* 4px */
 
   /* Spacing 24 space definitions with 6 naming convention = 4 in each group*/
-  /* 4px,11px,15px,16px,19px,24px,25px,30px,32px,34px,40px,48px,54px,61px,64px,66px,67px,72px,80px,84px,88px,92px,110px,125px */
   --space-xs-1: 0.25rem; /* 4px */
   --space-xs-2: 0.6875rem; /* 11px */
   --space-xs-3: 0.9375rem; /* 15px */
@@ -56,10 +55,10 @@
 
   /* Borders */
   --border-radius-none: 0rem;
-  --border-radius-soft: 0.5rem;
-  --border-radius-rounded: 1.8125rem;
+  --border-radius-soft: 0.5rem; /* 8px */
+  --border-radius-rounded: 1.8125rem; /* 29px */
   --border-width-none: 0rem;
-  --border-width-s: 0.0625rem;
+  --border-width-s: 0.0625rem; /* 1px */
 }
 
 body {
