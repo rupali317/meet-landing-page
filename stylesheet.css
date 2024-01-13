@@ -1,16 +1,45 @@
 :root {
-    /* Colors */
-    /* Typography */
-    /* Spacing */
-    /* Borders */
+  /* Colors */
+  --primary-color-1: hsl(192, 37%, 48%);
+  --primary-color-2: hsl(192, 54%, 64%);
+  --primary-color-3: hsl(192, 90%, 77%);
+  --secondary-color-1: hsl(268, 34%, 53%);
+  --secondary-color-2: hsl(268, 55%, 71%);
+  --secondary-color-3: hsl(268, 100%, 86%);
+  --neutral-color-1: hsl(239, 21%, 20%);
+  --neutral-color-2: hsl(239, 10%, 57%);
+  --neutral-color-3: hsl(240, 10%, 57%, 0.25);
+  --neutral-color-4: hsl(0, 0%, 98%);
+  --neutral-color-5: hsl(0, 0%, 100%);
+  --neutral-color-6: hsl(0, 0%, 85%);
 
+  /* Typography */
+  --font-size-xs: 1rem;
+  --font-size-s: 1.125rem;
+  --font-size-base: 2rem;
+  --font-size-medium: 2.5rem;
+  --font-size-l: 3rem;
+  --font-size-xl: 4rem;
+  --line-height-xs: 1.625rem;
+  --line-height-base: 2.25rem;
+  --line-height-medium: 2.75rem;
+  --line-height-l: 3rem;
+  --line-height-xl: 4rem;
+  --letter-spacing: 0.25rem;
+
+  /* Spacing */
+ 
+
+  /* Borders */
+  --border-radius-none: 0rem;
+  --border-radius-soft: 0.5rem;
+  --border-radius-rounded: 1.8125rem;
+  --border-width-none: 0rem;
+  --border-width-s: 0.0625rem;
 }
 
-
 body {
-
 }
 
 header img {
-
 }
