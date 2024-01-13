@@ -31,6 +31,7 @@
   --letter-spacing: 0.25rem; /* 4px */
 
   /* Spacing 24 space definitions with 6 naming convention = 4 in each group*/
+  --space-none: 0rem;
   --space-xs-1: 0.25rem; /* 4px */
   --space-xs-2: 0.6875rem; /* 11px */
   --space-xs-3: 0.9375rem; /* 15px */
@@ -128,24 +129,153 @@ img {
 @font-face {
   font-family: "Red Hat Display";
   src: url("./assets/fonts/RedHatDisplay-Black.ttf") format("truetype");
-  font-weight: var(--font-weight-black);
+  font-weight: 900;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Red Hat Display";
   src: url("./assets/fonts/RedHatDisplay-Medium.ttf") format("truetype");
-  font-weight: var(--font-weight-medium);
+  font-weight: 500;
   font-display: swap;
+}
+
+main {
+  min-width: 25.875rem; /* 414px */ /*RRC: Explore this - min-width , max-width*/
 }
 
 body {
   font-family: "Red Hat Display", sans-serif;
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-header img {
+header {
+  padding-top: var(--space-base-4);
+  padding-bottom: var(--space-medium-1);
+}
+
+#first-section {
+  display: grid;
+  grid-template-areas:
+    "hero-left hero-right"
+    "group-chat-article group-chat-article";
+  column-gap: var(--space-xs-4);
+  row-gap: var(--space-base-4);
+}
+
+#image-hero-left {
+  grid-area: hero-left;
+}
+
+#image-hero-right {
+  grid-area: hero-right;
+}
+
+#first-section__article {
+  grid-area: group-chat-article;
+  padding: var(--space-none) var(--space-s-2) var(--space-medium-3);
+  display: grid;
+  grid-template-areas:
+    "heading"
+    "."
+    "paragraph"
+    "."
+    "primary-action"
+    "."
+    "secondary-action";
+  /* grid-template-columns: 1fr; */
+  grid-template-rows: auto var(--space-s-2) auto var(--space-base-1) auto var(
+      --space-xs-4
+    ) auto;
+  justify-items: center;
+}
+
+#first-section__article h1 {
+  grid-area: heading;
+}
+
+#first-section__article p {
+  grid-area: paragraph;
+}
+
+#first-section__article .btn--primary {
+  grid-area: primary-action;
+}
+
+#first-section__article .btn--secondary {
+  grid-area: secondary-action;
+}
+
+main h1 {
+  color: var(--neutral-color-1);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-black);
+  line-height: var(--line-height-medium);
+}
+
+main p {
+  color: var(--neutral-color-2);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-xs);
+}
+
+button,
+a {
+  color: var(--neutral-color-5);
+  border-radius: var(--border-radius-rounded);
+  padding: var(--space-xs-4);
+  border-width: var(--border-width-none);
+  font-size: var(--font-size-xs);
+  line-height: var(
+    --line-height-xs
+  ); /*Withpout specifying font size and line height, button has its own style*/
+  font-weight: var(--font-weight-black);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xs-1);
+}
+
+.btn--primary {
+  background-color: var(--primary-color-1);
+}
+
+.btn--primary strong {
+  color: var(--primary-color-3);
+}
+
+.btn--secondary {
+  background-color: var(--secondary-color-1);
+}
+
+.btn--secondary strong {
+  color: var(--secondary-color-3);
+}
+
+.btn--primary:hover {
+  background-color: var(--primary-color-2);
+}
+
+.btn--secondary:hover {
+  background-color: var(--secondary-color-2);
+}
+
+a {
+  text-decoration: none;
+  min-width: 8.6875rem; /* 139px*/ /*RRC: Explore this - min-width , max-width*/
+}
+
+button {
+  min-width: 12.0625rem; /* 193px*/ /*RRC: Explore this - min-width , max-width*/
+}
+
+article h1,
+article p {
+  max-width: 20.4375rem; /* 327px */
 }
 /******************** End: Main stylings ********************/
