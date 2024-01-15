@@ -34,6 +34,7 @@
   --space-none: 0rem;
   --space-xs-5: 0.0625rem; /* 1px */
   --space-xs-1: 0.25rem; /* 4px */
+  --space-sx-6: 0.5rem; /*8px*/
   --space-xs-2: 0.6875rem; /* 11px */
   --space-xs-3: 0.9375rem; /* 15px */
   --space-xs-4: 1rem; /* 16px */
@@ -165,7 +166,7 @@ header {
   padding-bottom: var(--space-medium-1);
 }
 
-#first-section {
+#intro-section {
   display: grid;
   grid-template-areas:
     "hero-left hero-right"
@@ -182,7 +183,7 @@ header {
   grid-area: hero-right;
 }
 
-#first-section__article {
+#intro-section__article {
   grid-area: group-chat-article;
   padding: var(--space-none) var(--space-s-2) var(--space-medium-3);
   display: grid;
@@ -200,19 +201,19 @@ header {
   justify-items: center;
 }
 
-#first-section__article h1 {
+#intro-section__article h1 {
   grid-area: heading;
 }
 
-#first-section__article p {
+#intro-section__article p {
   grid-area: paragraph;
 }
 
-#first-section__article .btn--primary {
+#intro-section__article .btn--primary {
   grid-area: primary-action;
 }
 
-#first-section__article .btn--secondary {
+#intro-section__article .btn--secondary {
   grid-area: secondary-action;
 }
 
@@ -280,6 +281,7 @@ button {
 }
 
 article h1,
+article h2,
 article p {
   max-width: 20.4375rem; /* 327px */
 }
@@ -301,6 +303,69 @@ article p {
   height: var(--space-l-4);
   background-color: var(--neutral-color-3);
   transform: translateX(1.75rem);
+}
+
+#what-is-it {
+  padding: var(--space-medium-3) var(--space-s-2);
+  display: grid;
+  grid-template-areas:
+    "image-woman-in-videocall image-women-videochatting"
+    "image-men-in-meeting image-man-texting"
+    ". ."
+    "what-is-it__article what-is-it__article";
+  row-gap: var(--space-s-2);
+  column-gap: var(--space-s-3);
+  grid-template-rows: auto auto var(---space-s-2) auto;
+}
+
+#what-is-it img {
+  border-radius: var(--border-radius-soft);
+}
+
+#image-woman-in-videocall {
+  grid-area: image-woman-in-videocall;
+}
+
+#image-women-videochatting {
+  grid-area: image-women-videochatting;
+}
+
+#image-men-in-meeting {
+  grid-area: image-men-in-meeting;
+}
+
+#image-man-texting {
+  grid-area: image-man-texting;
+}
+
+#what-is-it__article {
+  grid-area: what-is-it__article;
+  display: grid;
+  grid-template-areas:
+    "ribbon-text"
+    "heading"
+    "text";
+  row-gap: var(--space-s-2);
+}
+
+.ribbon-text {
+  grid-area: ribbon-text;
+  text-transform: uppercase;
+  color: var(--primary-color-1);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--letter-spacing);
+}
+
+main h2 {
+  color: var(--neutral-color-1);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-black);
+  line-height: var(--line-height-base);
+  grid-area: heading;
+}
+
+#what-is-it__article p:not([class]) {
+  padding-top: var(--space-sx-6);
 }
 
 /******************** End: Main stylings ********************/
