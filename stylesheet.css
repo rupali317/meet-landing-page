@@ -143,7 +143,8 @@ img {
   font-display: swap;
 }
 
-main {
+main,
+footer {
   min-width: 25.875rem; /* 414px */ /*RRC: Explore this - min-width , max-width*/
   display: flex;
   flex-direction: column;
@@ -154,6 +155,7 @@ main {
 body {
   font-family: "Red Hat Display", sans-serif;
   font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
   line-height: var(--line-height-xs);
   display: flex;
   flex-direction: column;
@@ -300,6 +302,7 @@ article p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--neutral-color-4);
 }
 
 .demarcation-section .line {
@@ -348,7 +351,7 @@ article p {
   grid-template-areas:
     "ribbon-text"
     "heading"
-    "text";
+    "paragraph";
   row-gap: var(--space-s-2);
 }
 
@@ -370,6 +373,41 @@ main h2 {
 
 #what-is-it__article p:not([class]) {
   padding-top: var(--space-xs-6);
+  grid-area: paragraph;
 }
 
+footer article {
+  display: grid;
+  grid-template-areas:
+    "heading"
+    "paragraph"
+    "action";
+  row-gap: var(--space-s-2);
+}
+
+footer {
+  color: var(--neutral-color-4);
+  background-color: var(--primary-color-1);
+}
+
+footer article {
+  padding: var(--space-medium-3) var(--space-s-2) var(--space-l-2);
+}
+
+footer h2 {
+  grid-area: heading;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-black);
+  line-height: var(--line-height-base);
+}
+
+footer p {
+  grid-area: paragraph;
+  padding-top: var(--space-xs-6);
+  font-size: var(--font-size-s);
+}
+
+footer button {
+  grid-area: action;
+}
 /******************** End: Main stylings ********************/
