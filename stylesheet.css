@@ -403,11 +403,11 @@ footer h2 {
 
 footer p {
   grid-area: paragraph;
-  padding-top: var(--space-xs-6);
   font-size: var(--font-size-s);
 }
 
 footer button {
   grid-area: action;
+  margin-top: var(--space-xs-6);
 }
 /******************** End: Main stylings ********************/
