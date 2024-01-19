@@ -12,6 +12,8 @@
 
   img {
     border-radius: var(--border-radius-soft);
+    width: 9.4375rem; /*151px*/
+    height: 8.9375rem; /*143px*/
 
     &:first-child {
       grid-area: image-woman-in-videocall;

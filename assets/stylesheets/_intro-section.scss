@@ -6,12 +6,17 @@
   column-gap: var(--space-xs-4);
   row-gap: var(--space-base-4);
 
-  img:first-child {
-    grid-area: hero-left;
-  }
+  img {
+    width: 12.4375rem; /* 199px */
+    height: 9.5625rem; /* 153px */
 
-  img:nth-child(2) {
-    grid-area: hero-right;
+    &:first-child {
+      grid-area: hero-left;
+    }
+
+    &:nth-child(2) {
+      grid-area: hero-right;
+    }
   }
 }
 

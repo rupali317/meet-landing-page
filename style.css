@@ -1,4 +1,7 @@
 :root {
+  /* Layout widths */
+  --tablet-layout-width: 48rem;
+  --desktop-layout-width: 80rem;
   /* Colors */
   --primary-color-1: hsl(192, 37%, 48%);
   --primary-color-2: hsl(192, 54%, 64%);
@@ -185,9 +188,7 @@ a {
   padding: var(--space-xs-4);
   border-width: var(--border-width-none);
   font-size: var(--font-size-xs);
-  line-height: var(
-    --line-height-xs
-  ); /* Without specifying font size and line height, button has its own style */
+  line-height: var(--line-height-xs); /* Without specifying font size and line height, button has its own style */
   font-weight: var(--font-weight-black);
   display: flex;
   justify-content: center;
@@ -258,6 +259,10 @@ article p {
   column-gap: var(--space-xs-4);
   row-gap: var(--space-base-4);
 }
+#intro-section img {
+  width: 12.4375rem; /* 199px */
+  height: 9.5625rem; /* 153px */
+}
 #intro-section img:first-child {
   grid-area: hero-left;
 }
@@ -270,9 +275,7 @@ article p {
   padding: var(--space-none) var(--space-s-2) var(--space-medium-3);
   display: grid;
   grid-template-areas: "heading" "." "paragraph" "." "primary-action" "." "secondary-action";
-  grid-template-rows: auto var(--space-s-2) auto var(--space-base-1) auto var(
-      --space-xs-4
-    ) auto;
+  grid-template-rows: auto var(--space-s-2) auto var(--space-base-1) auto var(--space-xs-4) auto;
   justify-items: center;
 }
 #intro-section__article h1 {
@@ -298,6 +301,8 @@ article p {
 }
 #what-is-it img {
   border-radius: var(--border-radius-soft);
+  width: 9.4375rem; /*151px*/
+  height: 8.9375rem; /*143px*/
 }
 #what-is-it img:first-child {
   grid-area: image-woman-in-videocall;
