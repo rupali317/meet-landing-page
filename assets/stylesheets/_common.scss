@@ -71,7 +71,7 @@ a {
   font-size: var(--font-size-xs);
   line-height: var(
     --line-height-xs
-  ); /*Withpout specifying font size and line height, button has its own style*/
+  ); /* Without specifying font size and line height, button has its own style */
   font-weight: var(--font-weight-black);
   display: flex;
   justify-content: center;
@@ -82,28 +82,32 @@ a {
   }
 }
 
-.btn--primary {
-  background-color: var(--primary-color-1);
+@mixin button-styles($default-button-color, $text-color, $hover-button-color) {
+  background-color: $default-button-color;
 
   strong {
-    color: var(--primary-color-3);
+    color: $text-color;
   }
 
   &:hover {
-    background-color: var(--primary-color-2);
+    background-color: $hover-button-color;
   }
 }
 
+.btn--primary {
+  @include button-styles(
+    var(--primary-color-1),
+    var(--primary-color-3),
+    var(--primary-color-2)
+  );
+}
+
 .btn--secondary {
-  background-color: var(--secondary-color-1);
-
-  strong {
-    color: var(--secondary-color-3);
-  }
-
-  &:hover {
-    background-color: var(--secondary-color-2);
-  }
+  @include button-styles(
+    var(--secondary-color-1),
+    var(--secondary-color-3),
+    var(--secondary-color-2)
+  );
 }
 
 a {
@@ -115,10 +119,12 @@ button {
   min-width: 12.0625rem; /* 193px*/ /*RRC: Explore this - min-width , max-width*/
 }
 
-article h1,
-article h2,
-article p {
-  max-width: 20.4375rem; /* 327px */
+article {
+  h1,
+  h2,
+  p {
+    max-width: 20.4375rem; /* 327px */
+  }
 }
 
 .demarcation-section {
