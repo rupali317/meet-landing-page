@@ -1,17 +1,17 @@
 #what-is-it {
-  padding: var(--space-medium-3) var(--space-s-2);
+  padding: $space-medium-3 $space-s-2;
   display: grid;
   grid-template-areas:
     "image-woman-in-videocall image-women-videochatting"
     "image-men-in-meeting image-man-texting"
     ". ."
     "what-is-it__article what-is-it__article";
-  row-gap: var(--space-s-2);
-  column-gap: var(--space-s-3);
-  grid-template-rows: auto auto var(--space-xs-4) auto;
+  row-gap: $space-s-2;
+  column-gap: $space-s-3;
+  grid-template-rows: auto auto $space-xs-4 auto;
 
   img {
-    border-radius: var(--border-radius-soft);
+    border-radius: $border-radius-soft;
     width: 9.4375rem; /*151px*/
     height: 8.9375rem; /*143px*/
 
@@ -40,10 +40,10 @@
     "ribbon-text"
     "heading"
     "paragraph";
-  row-gap: var(--space-s-2);
+  row-gap: $space-s-2;
 
   p:not([class]) {
-    padding-top: var(--space-xs-6);
+    padding-top: $space-xs-6;
     grid-area: paragraph;
   }
 }
@@ -51,7 +51,7 @@
 .ribbon-text {
   grid-area: ribbon-text;
   text-transform: uppercase;
-  color: var(--primary-color-1);
-  font-weight: var(--font-weight-black);
-  letter-spacing: var(--letter-spacing);
+  color: $primary-color-1;
+  font-weight: $font-weight-black;
+  letter-spacing: $letter-spacing;
 }

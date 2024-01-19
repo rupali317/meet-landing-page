@@ -3,8 +3,8 @@
   grid-template-areas:
     "hero-left hero-right"
     "group-chat-article group-chat-article";
-  column-gap: var(--space-xs-4);
-  row-gap: var(--space-base-4);
+  column-gap: $space-xs-4;
+  row-gap: $space-base-4;
 
   img {
     width: 12.4375rem; /* 199px */
@@ -20,9 +20,12 @@
   }
 }
 
+@media (min-width: $tablet-layout-width) {
+}
+
 #intro-section__article {
   grid-area: group-chat-article;
-  padding: var(--space-none) var(--space-s-2) var(--space-medium-3);
+  padding: $space-none $space-s-2 $space-medium-3;
   display: grid;
   grid-template-areas:
     "heading"
@@ -33,7 +36,7 @@
     "."
     "secondary-action";
   grid-template-rows:
-    auto var(--space-s-2) auto var(--space-base-1) auto var(--space-xs-4)
+    auto $space-s-2 auto $space-base-1 auto $space-xs-4
     auto;
   justify-items: center;
 

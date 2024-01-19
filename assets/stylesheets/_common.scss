@@ -23,59 +23,57 @@ footer {
 
 body {
   font-family: "Red Hat Display", sans-serif;
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-xs);
+  font-size: $font-size-xs;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-xs;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: var(--neutral-color-4);
+  background-color: $neutral-color-4;
 }
 
 header {
-  padding-top: var(--space-base-4);
-  padding-bottom: var(--space-medium-1);
+  padding-top: $space-base-4;
+  padding-bottom: $space-medium-1;
 }
 
 main {
   h1 {
-    color: var(--neutral-color-1);
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-black);
-    line-height: var(--line-height-medium);
+    color: $neutral-color-1;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-black;
+    line-height: $line-height-medium;
   }
 
   h2 {
-    color: var(--neutral-color-1);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-black);
-    line-height: var(--line-height-base);
+    color: $neutral-color-1;
+    font-size: $font-size-base;
+    font-weight: $font-weight-black;
+    line-height: $line-height-base;
     grid-area: heading;
   }
 
   p {
-    color: var(--neutral-color-2);
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-medium);
-    line-height: var(--line-height-xs);
+    color: $neutral-color-2;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-xs;
   }
 }
 
 button,
 a {
-  color: var(--neutral-color-5);
-  border-radius: var(--border-radius-rounded);
-  padding: var(--space-xs-4);
-  border-width: var(--border-width-none);
-  font-size: var(--font-size-xs);
-  line-height: var(
-    --line-height-xs
-  ); /* Without specifying font size and line height, button has its own style */
-  font-weight: var(--font-weight-black);
+  color: $neutral-color-5;
+  border-radius: $border-radius-rounded;
+  padding: $space-xs-4;
+  border-width: $border-width-none;
+  font-size: $font-size-xs;
+  line-height: $line-height-xs; /* Without specifying font size and line height, button has its own style */
+  font-weight: $font-weight-black;
   display: flex;
   justify-content: center;
-  gap: var(--space-xs-1);
+  gap: $space-xs-1;
 
   &:hover {
     cursor: pointer;
@@ -95,18 +93,14 @@ a {
 }
 
 .btn--primary {
-  @include button-styles(
-    var(--primary-color-1),
-    var(--primary-color-3),
-    var(--primary-color-2)
-  );
+  @include button-styles($primary-color-1, $primary-color-3, $primary-color-2);
 }
 
 .btn--secondary {
   @include button-styles(
-    var(--secondary-color-1),
-    var(--secondary-color-3),
-    var(--secondary-color-2)
+    $secondary-color-1,
+    $secondary-color-3,
+    $secondary-color-2
   );
 }
 
@@ -129,22 +123,22 @@ article {
 
 .demarcation-section {
   .number {
-    color: var(--neutral-color-2);
-    font-weight: var(--font-weight-black);
-    border: var(--border-width-s) solid var(--neutral-color-3);
-    border-radius: var(--border-radius-rounded);
-    width: var(--space-medium-5);
-    height: var(--space-medium-5);
+    color: $neutral-color-2;
+    font-weight: $font-weight-black;
+    border: $border-width-s solid $neutral-color-3;
+    border-radius: $border-radius-rounded;
+    width: $space-medium-5;
+    height: $space-medium-5;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--neutral-color-4);
+    background-color: $neutral-color-4;
   }
 
   .line {
-    width: var(--space-xs-5);
-    height: var(--space-l-4);
-    background-color: var(--neutral-color-3);
+    width: $space-xs-5;
+    height: $space-l-4;
+    background-color: $neutral-color-3;
     transform: translateX(1.75rem);
   }
 }

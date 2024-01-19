@@ -1,3 +1,5 @@
+@import "_base.scss";
+
 /* Box sizing rules */
 *,
 *::before,
@@ -45,7 +47,6 @@ button {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
-  color: var(--link-color);
 }
 
 /* Make images easier to work with */
