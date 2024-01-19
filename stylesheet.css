@@ -384,6 +384,7 @@ article.footer {
     "paragraph"
     "action";
   row-gap: var(--space-s-2);
+  justify-items: center;
 }
 
 article.footer {

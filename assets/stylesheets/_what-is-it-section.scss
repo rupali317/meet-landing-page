@@ -1,0 +1,55 @@
+#what-is-it {
+  padding: var(--space-medium-3) var(--space-s-2);
+  display: grid;
+  grid-template-areas:
+    "image-woman-in-videocall image-women-videochatting"
+    "image-men-in-meeting image-man-texting"
+    ". ."
+    "what-is-it__article what-is-it__article";
+  row-gap: var(--space-s-2);
+  column-gap: var(--space-s-3);
+  grid-template-rows: auto auto var(--space-xs-4) auto;
+
+  img {
+    border-radius: var(--border-radius-soft);
+
+    &:first-child {
+      grid-area: image-woman-in-videocall;
+    }
+
+    &:nth-child(2) {
+      grid-area: image-women-videochatting;
+    }
+
+    &:nth-child(3) {
+      grid-area: image-men-in-meeting;
+    }
+
+    &:nth-child(4) {
+      grid-area: image-man-texting;
+    }
+  }
+}
+
+#what-is-it__article {
+  grid-area: what-is-it__article;
+  display: grid;
+  grid-template-areas:
+    "ribbon-text"
+    "heading"
+    "paragraph";
+  row-gap: var(--space-s-2);
+
+  p:not([class]) {
+    padding-top: var(--space-xs-6);
+    grid-area: paragraph;
+  }
+}
+
+.ribbon-text {
+  grid-area: ribbon-text;
+  text-transform: uppercase;
+  color: var(--primary-color-1);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--letter-spacing);
+}

@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("./assets/fonts/RedHatDisplay-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("./assets/fonts/RedHatDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+main,
+footer {
+  min-width: 25.875rem; /* 414px */ /*RRC: Explore this - min-width , max-width*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* overflow-x: hidden; */
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--neutral-color-4);
+}
+
+header {
+  padding-top: var(--space-base-4);
+  padding-bottom: var(--space-medium-1);
+}
+
+main {
+  h1 {
+    color: var(--neutral-color-1);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-black);
+    line-height: var(--line-height-medium);
+  }
+
+  h2 {
+    color: var(--neutral-color-1);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-black);
+    line-height: var(--line-height-base);
+    grid-area: heading;
+  }
+
+  p {
+    color: var(--neutral-color-2);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-xs);
+  }
+}
+
+button,
+a {
+  color: var(--neutral-color-5);
+  border-radius: var(--border-radius-rounded);
+  padding: var(--space-xs-4);
+  border-width: var(--border-width-none);
+  font-size: var(--font-size-xs);
+  line-height: var(
+    --line-height-xs
+  ); /*Withpout specifying font size and line height, button has its own style*/
+  font-weight: var(--font-weight-black);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xs-1);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn--primary {
+  background-color: var(--primary-color-1);
+
+  strong {
+    color: var(--primary-color-3);
+  }
+
+  &:hover {
+    background-color: var(--primary-color-2);
+  }
+}
+
+.btn--secondary {
+  background-color: var(--secondary-color-1);
+
+  strong {
+    color: var(--secondary-color-3);
+  }
+
+  &:hover {
+    background-color: var(--secondary-color-2);
+  }
+}
+
+a {
+  text-decoration: none;
+  min-width: 8.6875rem; /* 139px*/ /*RRC: Explore this - min-width , max-width*/
+}
+
+button {
+  min-width: 12.0625rem; /* 193px*/ /*RRC: Explore this - min-width , max-width*/
+}
+
+article h1,
+article h2,
+article p {
+  max-width: 20.4375rem; /* 327px */
+}
+
+.demarcation-section {
+  .number {
+    color: var(--neutral-color-2);
+    font-weight: var(--font-weight-black);
+    border: var(--border-width-s) solid var(--neutral-color-3);
+    border-radius: var(--border-radius-rounded);
+    width: var(--space-medium-5);
+    height: var(--space-medium-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-color-4);
+  }
+
+  .line {
+    width: var(--space-xs-5);
+    height: var(--space-l-4);
+    background-color: var(--neutral-color-3);
+    transform: translateX(1.75rem);
+  }
+}
