@@ -341,6 +341,7 @@ article p {
     grid-template-areas: "heading heading" ". ." "paragraph paragraph" ". ." "primary-action secondary-action";
     grid-template-rows: auto 1.5rem auto 2rem auto;
     padding: 0rem 0rem 5rem;
+    column-gap: 2rem;
   }
   #intro-section {
     column-gap: 2rem;
