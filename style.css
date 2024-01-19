@@ -196,7 +196,6 @@ main h2 {
   font-size: 2rem;
   font-weight: 900;
   line-height: 2.25rem;
-  grid-area: heading;
 }
 main p {
   color: hsl(239, 10%, 57%);
@@ -277,6 +276,28 @@ article p {
   transform: translateX(1.75rem);
 }
 
+@media (min-width: 48rem) {
+  header {
+    padding-bottom: 4rem;
+  }
+  main,
+  footer {
+    min-width: 51.25rem; /*820px*/
+  }
+  article h1,
+  article h2,
+  article p {
+    max-width: 28.5625rem; /* 457px */
+  }
+  main h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  main h2 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
 #intro-section {
   display: grid;
   grid-template-areas: "hero-left hero-right" "group-chat-article group-chat-article";
@@ -315,6 +336,21 @@ article p {
   grid-area: secondary-action;
 }
 
+@media (min-width: 48rem) {
+  #intro-section__article {
+    grid-template-areas: "heading heading" ". ." "paragraph paragraph" ". ." "primary-action secondary-action";
+    grid-template-rows: auto 1.5rem auto 2rem auto;
+    padding: 0rem 0rem 5rem;
+  }
+  #intro-section {
+    column-gap: 2rem;
+    row-gap: 4.5rem;
+  }
+  #intro-section img {
+    width: 24.625rem; /*394px*/
+    height: 18.9375rem; /*303px*/
+  }
+}
 #what-is-it {
   padding: 4rem 1.5rem;
   display: grid;
@@ -360,6 +396,25 @@ article p {
   letter-spacing: 0.25rem;
 }
 
+@media (min-width: 48rem) {
+  #what-is-it__article {
+    row-gap: 1rem;
+  }
+  #what-is-it__article p:not([class]) {
+    padding-top: 1rem;
+  }
+  #what-is-it {
+    padding: 4.1875rem 0rem 5rem 0rem;
+    grid-template-areas: "image-woman-in-videocall image-women-videochatting image-men-in-meeting image-man-texting" ". . . ." "what-is-it__article what-is-it__article what-is-it__article what-is-it__article";
+    row-gap: 1rem;
+    column-gap: 0.6875rem;
+    grid-template-rows: auto 1rem auto;
+  }
+  #what-is-it img {
+    width: 10.25rem; /*164px*/
+    height: 9.75rem; /*156px*/
+  }
+}
 .footer {
   display: grid;
   grid-template-areas: "heading" "paragraph" "action";

@@ -51,7 +51,7 @@ main {
     font-size: $font-size-base;
     font-weight: $font-weight-black;
     line-height: $line-height-base;
-    grid-area: heading;
+    // grid-area: heading;
   }
 
   p {
@@ -140,5 +140,37 @@ article {
     height: $space-l-4;
     background-color: $neutral-color-3;
     transform: translateX(1.75rem);
+  }
+}
+
+@media (min-width: $tablet-layout-width) {
+  header {
+    padding-bottom: $space-medium-3;
+  }
+
+  main,
+  footer {
+    min-width: 51.25rem; /*820px*/
+  }
+
+  article {
+    h1,
+    h2,
+    p {
+      max-width: 28.5625rem; /* 457px */
+    }
+  }
+
+  main {
+    h1 {
+      font-size: $font-size-l;
+      line-height: $line-height-l;
+    }
+
+    h2 {
+      font-size: $font-size-medium;
+      line-height: $line-height-medium;
+      // grid-area: heading;
+    }
   }
 }

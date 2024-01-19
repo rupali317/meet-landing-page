@@ -55,3 +55,29 @@
   font-weight: $font-weight-black;
   letter-spacing: $letter-spacing;
 }
+
+@media (min-width: $tablet-layout-width) {
+  #what-is-it__article {
+    row-gap: $space-xs-4;
+
+    p:not([class]) {
+      padding-top: $space-xs-4;
+    }
+  }
+
+  #what-is-it {
+    padding: $space-l-1 $space-none $space-l-3 $space-none;
+    grid-template-areas:
+      "image-woman-in-videocall image-women-videochatting image-men-in-meeting image-man-texting"
+      ". . . ."
+      "what-is-it__article what-is-it__article what-is-it__article what-is-it__article";
+    row-gap: $space-xs-4;
+    column-gap: $space-xs-2;
+    grid-template-rows: auto $space-xs-4 auto;
+
+    img {
+      width: 10.25rem; /*164px*/
+      height: 9.75rem; /*156px*/
+    }
+  }
+}

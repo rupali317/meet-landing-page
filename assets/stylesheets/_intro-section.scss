@@ -20,9 +20,6 @@
   }
 }
 
-@media (min-width: $tablet-layout-width) {
-}
-
 #intro-section__article {
   grid-area: group-chat-article;
   padding: $space-none $space-s-2 $space-medium-3;
@@ -54,5 +51,28 @@
 
   .btn--secondary {
     grid-area: secondary-action;
+  }
+}
+
+@media (min-width: $tablet-layout-width) {
+  #intro-section__article {
+    grid-template-areas:
+      "heading heading"
+      ". ."
+      "paragraph paragraph"
+      ". ."
+      "primary-action secondary-action";
+    grid-template-rows: auto $space-s-2 auto $space-base-1 auto;
+    padding: $space-none $space-none $space-l-3;
+  }
+
+  #intro-section {
+    column-gap: $space-base-1;
+    row-gap: $space-l-2;
+
+    img {
+      width: 24.625rem; /*394px*/
+      height: 18.9375rem; /*303px*/
+    }
   }
 }
