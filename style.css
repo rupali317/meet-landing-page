@@ -458,7 +458,7 @@ footer {
 
 .footer-background {
   height: 26.75rem; /* 428px */
-  width: 25.875rem; /* 414px */
+  width: 100%;
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -469,8 +469,22 @@ footer {
   opacity: 0.5;
 }
 .footer-background img {
-  height: 26.75rem; /* 428px */
-  width: 25.875rem; /* 414px */
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 48rem) {
+  .footer {
+    row-gap: 2rem;
+    padding: 4rem 1.5rem 4.125rem;
+  }
+  .footer h2 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+  .footer p {
+    max-width: 35.8125rem; /* 573px */
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
