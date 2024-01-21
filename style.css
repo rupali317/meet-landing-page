@@ -463,13 +463,11 @@ footer {
   z-index: -1;
   background-color: hsl(192, 37%, 48%);
 }
-.footer-background picture {
-  mix-blend-mode: soft-light;
-  opacity: 0.5;
-}
 .footer-background img {
   height: 100%;
   width: 100%;
+  mix-blend-mode: soft-light;
+  opacity: 0.5;
 }
 
 @media (min-width: 48rem) {

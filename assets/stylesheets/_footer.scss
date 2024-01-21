@@ -40,14 +40,11 @@ footer {
   z-index: -1;
   background-color: $primary-color-1;
 
-  picture {
-    mix-blend-mode: soft-light;
-    opacity: 0.5;
-  }
-
   img {
     height: 100%;
     width: 100%;
+    mix-blend-mode: soft-light;
+    opacity: 0.5;
   }
 }
 
