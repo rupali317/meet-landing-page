@@ -17,7 +17,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: $mobile-layout-width; /* RRC: Study the min-width, max-width*/
+  min-width: 100%; /* RRC: Study the min-width, max-width*/
 }
 
 body {
@@ -50,7 +50,6 @@ main {
     font-size: $font-size-base;
     font-weight: $font-weight-black;
     line-height: $line-height-base;
-    // grid-area: heading;
   }
 
   p {
@@ -147,11 +146,6 @@ article {
     padding-bottom: $space-medium-3;
   }
 
-  main,
-  footer {
-    min-width: $tablet-layout-width;
-  }
-
   article {
     h1,
     h2,
@@ -181,15 +175,18 @@ article {
     h2 {
       font-size: $font-size-medium;
       line-height: $line-height-medium;
-      // grid-area: heading;   Rupali: Check this
     }
   }
 }
 
-@media (min-width: $desktop-layout-width) { 
+@media (min-width: $desktop-layout-width) {
   header {
     padding-top: $space-l-3;
     padding-bottom: $space-medium-2;
+  }
+
+  #what-is-it__article {
+    max-width: 33.75rem;
   }
 
   main {

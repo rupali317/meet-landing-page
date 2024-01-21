@@ -166,7 +166,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 23.4375rem; /* RRC: Study the min-width, max-width*/
+  min-width: 100%; /* RRC: Study the min-width, max-width*/
 }
 
 body {
@@ -281,10 +281,6 @@ article p {
   header {
     padding-bottom: 4rem;
   }
-  main,
-  footer {
-    min-width: 48rem;
-  }
   article h1,
   article h2,
   article p {
@@ -312,6 +308,9 @@ article p {
   header {
     padding-top: 5rem;
     padding-bottom: 3.8125rem;
+  }
+  #what-is-it__article {
+    max-width: 33.75rem;
   }
   main h1 {
     font-size: 4rem;
@@ -436,6 +435,7 @@ article p {
   color: hsl(192, 37%, 48%);
   font-weight: 900;
   letter-spacing: 0.25rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 48rem) {
@@ -457,6 +457,18 @@ article p {
   #what-is-it img {
     width: 10.25rem; /*164px*/
     height: 9.75rem; /*156px*/
+  }
+}
+@media (min-width: 80rem) {
+  #what-is-it {
+    column-gap: 1.875rem;
+    padding: 4rem 0rem 5rem 0rem;
+    row-gap: 1.5625rem;
+    grid-template-rows: auto 1.875rem auto;
+  }
+  #what-is-it img {
+    width: 15.9375rem; /*255px*/
+    height: 15.125rem; /*242px*/
   }
 }
 .footer {
