@@ -7,7 +7,8 @@
   row-gap: $space-base-4;
 
   img {
-    width: 12.4375rem; /* 199px */
+    // width: 12.4375rem; /* 199px = Overflowing out of the screen */
+    width: 11rem; /* 176px */
     height: 9.5625rem; /* 153px */
 
     &:first-child {
@@ -73,7 +74,8 @@
     justify-items: center;
 
     img {
-      width: 24.625rem; /*394px*/
+      // width: 24.625rem; /* 394px = Overflowing out of the screen */
+      width: 23rem; /*368px*/
       height: 18.9375rem; /*303px*/
     }
   }

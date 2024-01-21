@@ -161,11 +161,10 @@ img {
 }
 main,
 footer {
-  min-width: 25.875rem; /* 414px */ /*RRC: Explore this - min-width , max-width*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* overflow-x: hidden; */
+  min-width: 23.4375rem; /* RRC: Study the min-width, max-width*/
 }
 
 body {
@@ -282,7 +281,7 @@ article p {
   }
   main,
   footer {
-    min-width: 51.25rem; /*820px*/
+    min-width: 48rem;
   }
   article h1,
   article h2,
@@ -314,7 +313,7 @@ article p {
   row-gap: 3rem;
 }
 #intro-section img {
-  width: 12.4375rem; /* 199px */
+  width: 11rem; /* 176px */
   height: 9.5625rem; /* 153px */
 }
 #intro-section img:first-child {
@@ -358,7 +357,7 @@ article p {
     justify-items: center;
   }
   #intro-section img {
-    width: 24.625rem; /*394px*/
+    width: 23rem; /*368px*/
     height: 18.9375rem; /*303px*/
   }
 }

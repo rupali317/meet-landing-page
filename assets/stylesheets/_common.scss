@@ -14,11 +14,10 @@
 
 main,
 footer {
-  min-width: 25.875rem; /* 414px */ /*RRC: Explore this - min-width , max-width*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* overflow-x: hidden; */
+  min-width: $mobile-layout-width; /* RRC: Study the min-width, max-width*/
 }
 
 body {
@@ -150,7 +149,7 @@ article {
 
   main,
   footer {
-    min-width: 51.25rem; /*820px*/
+    min-width: $tablet-layout-width;
   }
 
   article {
@@ -182,7 +181,7 @@ article {
     h2 {
       font-size: $font-size-medium;
       line-height: $line-height-medium;
-      // grid-area: heading;
+      // grid-area: heading;   Rupali: Check this
     }
   }
 }
