@@ -161,6 +161,18 @@ article {
     }
   }
 
+  #what-is-it__article {
+    max-width: 35.8125rem; /* 573px */
+
+    h2 {
+      max-width: 27.8125rem; /* 445px */
+    }
+
+    p {
+      max-width: 100%;
+    }
+  }
+
   main {
     h1 {
       font-size: $font-size-l;

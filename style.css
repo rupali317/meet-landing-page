@@ -289,6 +289,15 @@ article p {
   article p {
     max-width: 28.5625rem; /* 457px */
   }
+  #what-is-it__article {
+    max-width: 35.8125rem; /* 573px */
+  }
+  #what-is-it__article h2 {
+    max-width: 27.8125rem; /* 445px */
+  }
+  #what-is-it__article p {
+    max-width: 100%;
+  }
   main h1 {
     font-size: 3rem;
     line-height: 3rem;
@@ -338,7 +347,7 @@ article p {
 
 @media (min-width: 48rem) {
   #intro-section__article {
-    grid-template-areas: "heading heading" ". ." "paragraph paragraph" ". ." "primary-action secondary-action";
+    grid-template-areas: "heading heading heading heading" ". . . ." "paragraph paragraph paragraph paragraph" ". . . ." ". primary-action secondary-action .";
     grid-template-rows: auto 1.5rem auto 2rem auto;
     padding: 0rem 0rem 5rem;
     column-gap: 2rem;
@@ -346,6 +355,7 @@ article p {
   #intro-section {
     column-gap: 2rem;
     row-gap: 4.5rem;
+    justify-items: center;
   }
   #intro-section img {
     width: 24.625rem; /*394px*/
@@ -400,6 +410,7 @@ article p {
 @media (min-width: 48rem) {
   #what-is-it__article {
     row-gap: 1rem;
+    justify-items: center;
   }
   #what-is-it__article p:not([class]) {
     padding-top: 1rem;
@@ -410,6 +421,7 @@ article p {
     row-gap: 1rem;
     column-gap: 0.6875rem;
     grid-template-rows: auto 1rem auto;
+    justify-items: center;
   }
   #what-is-it img {
     width: 10.25rem; /*164px*/

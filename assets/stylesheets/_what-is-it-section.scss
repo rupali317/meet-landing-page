@@ -59,6 +59,7 @@
 @media (min-width: $tablet-layout-width) {
   #what-is-it__article {
     row-gap: $space-xs-4;
+    justify-items: center;
 
     p:not([class]) {
       padding-top: $space-xs-4;
@@ -74,6 +75,7 @@
     row-gap: $space-xs-4;
     column-gap: $space-xs-2;
     grid-template-rows: auto $space-xs-4 auto;
+    justify-items: center;
 
     img {
       width: 10.25rem; /*164px*/
