@@ -130,6 +130,9 @@ body {
 h1,
 h2 {
   line-height: 1.1; /* Set shorter line heights on headings and interactive elements */
+}
+
+h1 {
   text-wrap: balance; /* Balance text wrapping on headings */
 }
 
@@ -525,6 +528,23 @@ footer {
   }
   .footer p {
     max-width: 35.8125rem; /* 573px */
+  }
+}
+@media (min-width: 80rem) {
+  .footer {
+    grid-template-areas: "heading paragraph action" ". . ." ". . .";
+    row-gap: 5.5rem;
+    column-gap: 5.75rem;
+    text-align: left;
+    padding: 5.5rem 0rem 0rem 0rem;
+    align-items: center;
+    min-width: 69.375rem; /* 1110px */
+  }
+  .footer h2, .footer p {
+    max-width: 21.875rem; /* 350px */
+  }
+  .footer p {
+    padding-left: 2.0625rem; /* 33px */
   }
 }
 
