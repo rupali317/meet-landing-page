@@ -185,3 +185,21 @@ article {
     }
   }
 }
+
+@media (min-width: $desktop-layout-width) { 
+  header {
+    padding-top: $space-l-3;
+    padding-bottom: $space-medium-2;
+  }
+
+  main {
+    h1 {
+      font-size: $font-size-xl;
+      line-height: $line-height-xl;
+    }
+
+    p {
+      font-size: $font-size-s;
+    }
+  }
+}

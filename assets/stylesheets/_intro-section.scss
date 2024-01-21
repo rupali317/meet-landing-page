@@ -80,3 +80,24 @@
     }
   }
 }
+
+@media (min-width: $desktop-layout-width) {
+  #intro-section {
+    grid-template-areas:
+    "hero-left group-chat-article hero-right";
+    column-gap: $space-xl-1;
+    align-items: center;
+    padding-bottom: $space-xl-5;
+  }
+
+  #intro-section__article  {
+    padding: 2.9375rem $space-none $space-none $space-none;
+    grid-template-rows: auto $space-base-2 auto $space-base-1 auto;
+    column-gap: $space-xs-4;
+  }
+
+  #image-hero-right {
+    position: relative;
+    top: 3.4375rem; /* 55px */
+  }
+}
