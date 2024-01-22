@@ -397,11 +397,11 @@ article p {
     height: 14rem; /* 224px */
   }
   #intro-section__article {
-    padding: 2.9375rem 0rem 0rem 0rem;
+    padding: 2.9375rem 0rem 0rem 0rem; /* 47px = 2.9375rem */
     grid-template-rows: auto 2.125rem auto 2rem auto;
   }
   #image-hero-right {
-    transform: translateY(5rem); /* 55px */ /* RRC: Check again */
+    transform: translateY(5rem); /* 55px */
   }
 }
 #what-is-it {
@@ -458,7 +458,7 @@ article p {
     padding-top: 1rem;
   }
   #what-is-it {
-    padding: 4.1875rem 0rem 5rem 0rem;
+    padding: 4.1875rem 0rem 5rem;
     grid-template-areas: "image-woman-in-videocall image-women-videochatting image-men-in-meeting image-man-texting" ". . . ." "what-is-it__article what-is-it__article what-is-it__article what-is-it__article";
     row-gap: 1rem;
     column-gap: 0.6875rem;
@@ -473,7 +473,7 @@ article p {
 @media (min-width: 80rem) {
   #what-is-it {
     column-gap: 1.875rem;
-    padding: 4rem 0rem 5rem 0rem;
+    padding: 4rem 0rem 4.5rem;
     row-gap: 1.5625rem;
     grid-template-rows: auto 1.875rem auto;
   }
@@ -525,11 +525,7 @@ footer {
 @media (min-width: 48rem) {
   .footer {
     row-gap: 2rem;
-    padding: 4rem 1.5rem 4.125rem;
-  }
-  .footer h2 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
+    padding: 4rem 0rem 4.125rem;
   }
   .footer p {
     max-width: 35.8125rem; /* 573px */

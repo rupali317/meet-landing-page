@@ -93,11 +93,11 @@
   }
 
   #intro-section__article {
-    padding: 2.9375rem $space-none $space-none $space-none;
+    padding: 2.9375rem $space-none $space-none $space-none; /* 47px = 2.9375rem */
     grid-template-rows: auto $space-base-2 auto $space-base-1 auto;
   }
 
   #image-hero-right {
-    transform: translateY($space-l-3); /* 55px */ /* RRC: Check again */
+    transform: translateY($space-l-3); /* 55px */
   }
 }
