@@ -373,7 +373,7 @@ article p {
     grid-template-areas: "heading heading heading heading" ". . . ." "paragraph paragraph paragraph paragraph" ". . . ." ". primary-action secondary-action .";
     grid-template-rows: auto 1.5rem auto 2rem auto;
     padding: 0rem 0rem 5rem;
-    column-gap: 2rem;
+    column-gap: 1rem;
   }
   #intro-section {
     column-gap: 2rem;
@@ -399,7 +399,6 @@ article p {
   #intro-section__article {
     padding: 2.9375rem 0rem 0rem 0rem;
     grid-template-rows: auto 2.125rem auto 2rem auto;
-    column-gap: 1rem;
   }
   #image-hero-right {
     transform: translateY(5rem); /* 55px */ /* RRC: Check again */

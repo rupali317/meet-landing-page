@@ -48,12 +48,7 @@ footer {
 @media (min-width: $tablet-layout-width) {
   .footer {
     row-gap: $space-base-1;
-    padding: $space-medium-3 $space-s-2 $space-medium-4;
-
-    h2 {
-      font-size: $font-size-medium;
-      line-height: $line-height-medium;
-    }
+    padding: $space-medium-3 $space-none $space-medium-4;
 
     p {
       max-width: 35.8125rem; /* 573px */
