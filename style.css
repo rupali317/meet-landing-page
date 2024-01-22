@@ -314,8 +314,13 @@ article p {
     padding-top: 5rem;
     padding-bottom: 3.8125rem;
   }
+  article h1,
+  article h2,
+  article p {
+    max-width: 33.75rem; /* 540px */
+  }
   #what-is-it__article {
-    max-width: 33.75rem;
+    max-width: 33.75rem; /* 540px */
   }
   main h1 {
     font-size: 4rem;

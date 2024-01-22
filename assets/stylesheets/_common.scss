@@ -185,8 +185,16 @@ article {
     padding-bottom: $space-medium-2;
   }
 
+  article {
+    h1,
+    h2,
+    p {
+      max-width: 33.75rem; /* 540px */
+    }
+  }
+
   #what-is-it__article {
-    max-width: 33.75rem;
+    max-width: 33.75rem; /* 540px */
   }
 
   main {
