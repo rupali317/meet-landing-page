@@ -88,6 +88,11 @@
     column-gap: $space-xl-1;
     align-items: center;
     padding-bottom: $space-xl-5;
+
+    img {
+      width: 18rem; /* 288px */
+      height: 14rem; /* 224px */
+    }
   }
 
   #intro-section__article  {
@@ -98,6 +103,6 @@
 
   #image-hero-right {
     position: relative;
-    top: 3.4375rem; /* 55px */
+    top: $space-l-3; /* 55px */  /* RRC: Check again */
   }
 }

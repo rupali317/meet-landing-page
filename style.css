@@ -392,6 +392,10 @@ article p {
     align-items: center;
     padding-bottom: 7.375rem;
   }
+  #intro-section img {
+    width: 18rem; /* 288px */
+    height: 14rem; /* 224px */
+  }
   #intro-section__article {
     padding: 2.9375rem 0rem 0rem 0rem;
     grid-template-rows: auto 2.125rem auto 2rem auto;
@@ -399,7 +403,7 @@ article p {
   }
   #image-hero-right {
     position: relative;
-    top: 3.4375rem; /* 55px */
+    top: 5rem; /* 55px */ /* RRC: Check again */
   }
 }
 #what-is-it {
