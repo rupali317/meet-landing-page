@@ -66,14 +66,10 @@ footer {
 
 @media (min-width: $desktop-layout-width) {
   .footer {
-    grid-template-areas:
-      "heading paragraph action"
-      ". . ."
-      ". . .";
-    row-gap: $space-xl-1;
+    grid-template-areas: "heading paragraph action";
     column-gap: $space-xl-2;
     text-align: left;
-    padding: $space-xl-1 $space-none $space-none $space-none;
+    padding: $space-xl-1 $space-none $space-xl-6;
     align-items: center;
     min-width: 69.375rem; /* 1110px */
 
@@ -88,5 +84,13 @@ footer {
     h2 {
       @extend %max-width;
     }
+
+    button {
+      margin-top: $space-none;
+    }
+  }
+
+  .footer-background {
+    height: 19.25rem; /* 308px */
   }
 }

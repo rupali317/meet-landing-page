@@ -39,6 +39,7 @@
 /* 84px */
 /* 88px */
 /* 92px */
+/* 104px */
 /* 110px */
 /* 118px */
 /* 125px */
@@ -87,6 +88,7 @@
 /* 84px */
 /* 88px */
 /* 92px */
+/* 104px */
 /* 110px */
 /* 118px */
 /* 125px */
@@ -532,11 +534,10 @@ footer {
 }
 @media (min-width: 80rem) {
   .footer {
-    grid-template-areas: "heading paragraph action" ". . ." ". . .";
-    row-gap: 5.5rem;
+    grid-template-areas: "heading paragraph action";
     column-gap: 5.75rem;
     text-align: left;
-    padding: 5.5rem 0rem 0rem 0rem;
+    padding: 5.5rem 0rem 6.5rem;
     align-items: center;
     min-width: 69.375rem; /* 1110px */
   }
@@ -545,6 +546,12 @@ footer {
   }
   .footer p {
     padding-left: 2.0625rem; /* 33px */
+  }
+  .footer button {
+    margin-top: 0rem;
+  }
+  .footer-background {
+    height: 19.25rem; /* 308px */
   }
 }
 
