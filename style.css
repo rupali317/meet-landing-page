@@ -385,10 +385,6 @@ article p {
     row-gap: 4.5rem;
     justify-items: center;
   }
-  #intro-section img {
-    width: 23rem; /* 368px */
-    height: 18.9375rem; /* 303px */
-  }
 }
 @media (min-width: 80rem) {
   #intro-section {
@@ -551,9 +547,6 @@ footer {
   }
   .footer button {
     margin-top: 0rem;
-  }
-  .footer-background {
-    height: 19.25rem; /* 308px */
   }
 }
 
