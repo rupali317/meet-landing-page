@@ -7,8 +7,8 @@
   row-gap: $space-base-4;
 
   img {
-    // width: 11rem; /* 176px */
-    // height: 9.5625rem; /* 153px */
+    width: 11rem; /* 176px */
+    height: 9.5625rem; /* 153px */
 
     &:first-child {
       grid-area: hero-left;
@@ -73,8 +73,8 @@
     justify-items: center;
 
     img {
-      // width: 23rem; /* 368px */
-      // height: 18.9375rem; /* 303px */
+      width: 23rem; /* 368px */
+      height: 18.9375rem; /* 303px */
     }
   }
 }
@@ -87,8 +87,8 @@
     padding-bottom: $space-xl-5;
 
     img {
-      // width: 18rem; /* 288px */
-      // height: 14rem; /* 224px */
+      width: 18rem; /* 288px */
+      height: 14rem; /* 224px */
     }
   }
 
