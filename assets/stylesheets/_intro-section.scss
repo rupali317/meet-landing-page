@@ -7,9 +7,6 @@
   row-gap: $space-base-4;
 
   img {
-    width: 11rem; /* 176px */
-    height: 9.5625rem; /* 153px */
-
     &:first-child {
       grid-area: hero-left;
     }
@@ -71,11 +68,6 @@
     column-gap: $space-base-1;
     row-gap: $space-l-2;
     justify-items: center;
-
-    img {
-      width: 23rem; /* 368px */
-      height: 18.9375rem; /* 303px */
-    }
   }
 }
 
@@ -85,11 +77,6 @@
     column-gap: $space-xl-1;
     align-items: center;
     padding-bottom: $space-xl-5;
-
-    img {
-      width: 18rem; /* 288px */
-      height: 14rem; /* 224px */
-    }
   }
 
   #intro-section__article {
