@@ -393,10 +393,6 @@ article p {
     align-items: center;
     padding-bottom: 7.375rem;
   }
-  #intro-section img {
-    width: 18rem; /* 288px */
-    height: 14rem; /* 224px */
-  }
   #intro-section__article {
     padding: 2.9375rem 0rem 0rem 0rem; /* 47px = 2.9375rem */
     grid-template-rows: auto 2.125rem auto 2rem auto;
@@ -549,5 +545,3 @@ footer {
     margin-top: 0rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
