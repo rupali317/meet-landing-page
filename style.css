@@ -345,10 +345,6 @@ article p {
   column-gap: 1rem;
   row-gap: 3rem;
 }
-#intro-section img {
-  width: 11rem; /* 176px */
-  height: 9.5625rem; /* 153px */
-}
 #intro-section img:first-child {
   grid-area: hero-left;
 }
@@ -517,8 +513,6 @@ footer {
 }
 
 .footer-background {
-  height: 26.75rem; /* 428px */
-  width: 100%;
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -562,3 +556,5 @@ footer {
     height: 19.25rem; /* 308px */
   }
 }
+
+/*# sourceMappingURL=style.css.map */
