@@ -95,6 +95,10 @@ a {
   &:hover {
     background-color: $hover-button-color;
   }
+
+  &:hover strong {
+    color: $neutral-color-5;
+  }
 }
 
 .btn--primary {

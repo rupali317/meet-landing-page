@@ -246,6 +246,9 @@ a:focus {
 .btn--primary:hover {
   background-color: hsl(192, 54%, 64%);
 }
+.btn--primary:hover strong {
+  color: hsl(0, 0%, 100%);
+}
 
 .btn--secondary {
   background-color: hsl(268, 28.39%, 32.61%);
@@ -255,6 +258,9 @@ a:focus {
 }
 .btn--secondary:hover {
   background-color: hsl(268, 55%, 71%);
+}
+.btn--secondary:hover strong {
+  color: hsl(0, 0%, 100%);
 }
 
 a {
@@ -273,7 +279,7 @@ article p {
 }
 
 .demarcation-section .number {
-  color: hsl(240, 10%, 57%);
+  color: hsl(240, 7.91%, 48.31%);
   font-weight: 900;
   border: 0.0625rem solid hsla(240, 10%, 57%, 0.25);
   border-radius: 1.8125rem;
