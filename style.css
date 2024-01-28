@@ -517,13 +517,16 @@ footer {
 }
 
 .footer-background {
-  aspect-ratio: 0.88;
+  height: 26.75rem; /* 428px */
+  width: 100%;
   position: absolute;
   bottom: 0;
   z-index: -1;
   background-color: hsl(192, 37%, 48%);
 }
 .footer-background img {
+  height: 100%;
+  width: 100%;
   mix-blend-mode: soft-light;
   opacity: 0.5;
 }
@@ -556,6 +559,6 @@ footer {
     margin-top: 0rem;
   }
   .footer-background {
-    aspect-ratio: 4.68;
+    height: 19.25rem; /* 308px */
   }
 }
