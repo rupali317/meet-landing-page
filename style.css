@@ -347,7 +347,7 @@ article p {
 }
 #intro-section img {
   width: 11rem; /* 176px */
-  height: 9.5625rem; /* 153px */
+  height: 8.46125rem; /* 135.38px */
 }
 #intro-section img:first-child {
   grid-area: hero-left;
@@ -390,8 +390,9 @@ article p {
     justify-items: center;
   }
   #intro-section img {
+    /*aspect ratio = 1.30*/
     width: 23rem; /* 368px */
-    height: 18.9375rem; /* 303px */
+    height: 17.69rem; /* 283.07px */
   }
 }
 @media (min-width: 80rem) {
@@ -401,7 +402,8 @@ article p {
     align-items: center;
     padding-bottom: 7.375rem;
   }
-  #intro-section img { /*394 x 303*/
+  #intro-section img {
+    /*aspect ratio = 1.30*/
     width: 18rem; /* 288px */
     height: 13.845625rem; /* 221.53px */
   }

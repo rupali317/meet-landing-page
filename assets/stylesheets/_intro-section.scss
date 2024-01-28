@@ -8,7 +8,8 @@
 
   img {
     width: 11rem; /* 176px */
-    height: 9.5625rem; /* 153px */
+    //height: 9.5625rem; /* 153px */
+    height: 8.46125rem; /* 135.38px */
 
     &:first-child {
       grid-area: hero-left;
@@ -73,8 +74,9 @@
     justify-items: center;
 
     img {
+      /*aspect ratio = 1.30*/
       width: 23rem; /* 368px */
-      height: 18.9375rem; /* 303px */
+      height: 17.69rem; /* 283.07px */
     }
   }
 }
@@ -86,9 +88,8 @@
     align-items: center;
     padding-bottom: $space-xl-5;
 
-    img {  /*394 x 303*/
-      // width: 18rem; /* 288px */
-      // height: 14rem; /* 224px */
+    img {
+      /*aspect ratio = 1.30*/
       width: 18rem; /* 288px */
       height: 13.845625rem; /* 221.53px */
     }
