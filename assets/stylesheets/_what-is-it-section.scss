@@ -12,8 +12,9 @@
 
   img {
     border-radius: $border-radius-soft;
-    width: 9.4375rem; /* 151px */
-    height: 8.9375rem; /* 143px */
+    // width: 9.4375rem; /* 151px */
+    // height: 8.9375rem; /* 143px */
+    aspect-ratio: 1.055;
 
     &:first-child {
       grid-area: image-woman-in-videocall;
@@ -78,8 +79,9 @@
     justify-items: center;
 
     img {
-      width: 10.25rem; /* 164px */
-      height: 9.75rem; /* 156px */
+      // width: 10.25rem; /* 164px */
+      // height: 9.75rem; /* 156px */
+      aspect-ratio: 1.051;
     }
   }
 }
@@ -92,8 +94,9 @@
     grid-template-rows: auto $space-s-4 auto;
 
     img {
-      width: 15.9375rem; /* 255px */
-      height: 15.125rem; /* 242px */
+      // width: 15.9375rem; /* 255px */
+      // height: 15.125rem; /* 242px */
+      aspect-ratio: 1.053;
     }
   }
 }
