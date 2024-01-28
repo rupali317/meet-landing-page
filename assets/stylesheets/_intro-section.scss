@@ -7,7 +7,8 @@
   row-gap: $space-base-4;
 
   img {
-    aspect-ratio: 1.3;
+    width: 11rem; /* 176px */
+    height: 8.46125rem; /* 135.38px */
 
     &:first-child {
       grid-area: hero-left;
@@ -70,6 +71,11 @@
     column-gap: $space-base-1;
     row-gap: $space-l-2;
     justify-items: center;
+
+    img {
+      width: 23rem; /* 368px */
+      height: 17.69rem; /* 283.07px */
+    }
   }
 }
 
@@ -79,6 +85,11 @@
     column-gap: $space-xl-1;
     align-items: center;
     padding-bottom: $space-xl-5;
+
+    img {
+      width: 18rem; /* 288px */
+      height: 13.845625rem; /* 221.53px */
+    }
   }
 
   #intro-section__article {

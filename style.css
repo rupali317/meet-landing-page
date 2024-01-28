@@ -346,7 +346,8 @@ article p {
   row-gap: 3rem;
 }
 #intro-section img {
-  aspect-ratio: 1.3;
+  width: 11rem; /* 176px */
+  height: 8.46125rem; /* 135.38px */
 }
 #intro-section img:first-child {
   grid-area: hero-left;
@@ -388,6 +389,10 @@ article p {
     row-gap: 4.5rem;
     justify-items: center;
   }
+  #intro-section img {
+    width: 23rem; /* 368px */
+    height: 17.69rem; /* 283.07px */
+  }
 }
 @media (min-width: 80rem) {
   #intro-section {
@@ -395,6 +400,10 @@ article p {
     column-gap: 5.5rem;
     align-items: center;
     padding-bottom: 7.375rem;
+  }
+  #intro-section img {
+    width: 18rem; /* 288px */
+    height: 13.845625rem; /* 221.53px */
   }
   #intro-section__article {
     padding: 2.9375rem 0rem 0rem 0rem; /* 47px = 2.9375rem */
@@ -414,7 +423,8 @@ article p {
 }
 #what-is-it img {
   border-radius: 0.5rem;
-  aspect-ratio: 1.055;
+  width: 9.4375rem; /* 151px */
+  height: 8.9375rem; /* 143px */
 }
 #what-is-it img:first-child {
   grid-area: image-woman-in-videocall;
@@ -465,7 +475,8 @@ article p {
     justify-items: center;
   }
   #what-is-it img {
-    aspect-ratio: 1.051;
+    width: 10.25rem; /* 164px */
+    height: 9.75rem; /* 156px */
   }
 }
 @media (min-width: 80rem) {
@@ -476,7 +487,8 @@ article p {
     grid-template-rows: auto 1.875rem auto;
   }
   #what-is-it img {
-    aspect-ratio: 1.053;
+    width: 15.9375rem; /* 255px */
+    height: 15.125rem; /* 242px */
   }
 }
 .footer {
@@ -505,7 +517,8 @@ footer {
 }
 
 .footer-background {
-  aspect-ratio: 0.88;
+  height: 26.75rem; /* 428px */
+  width: 100%;
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -525,9 +538,6 @@ footer {
   }
   .footer p {
     max-width: 35.8125rem; /* 573px */
-  }
-  .footer-background {
-    aspect-ratio: 1.8;
   }
 }
 @media (min-width: 80rem) {
@@ -549,6 +559,8 @@ footer {
     margin-top: 0rem;
   }
   .footer-background {
-    aspect-ratio: 4.68;
+    height: 19.25rem; /* 308px */
   }
 }
+
+/*# sourceMappingURL=style.css.map */
