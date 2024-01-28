@@ -206,7 +206,7 @@ main h2 {
   line-height: 2.25rem;
 }
 main p {
-  color: hsl(239, 10%, 57%);
+  color: hsl(239, 4.84%, 45.5%);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.625rem;
@@ -238,17 +238,17 @@ a:focus {
 }
 
 .btn--primary {
-  background-color: hsl(192, 37%, 48%);
+  background-color: hsl(192, 33.66%, 35.5%);
 }
 .btn--primary strong {
-  color: hsl(192, 90%, 77%);
+  color: hsl(192, 100%, 88.59%);
 }
 .btn--primary:hover {
   background-color: hsl(192, 54%, 64%);
 }
 
 .btn--secondary {
-  background-color: hsl(268, 34%, 53%);
+  background-color: hsl(268, 28.39%, 32.61%);
 }
 .btn--secondary strong {
   color: hsl(268, 100%, 86%);
@@ -453,7 +453,7 @@ article p {
 .ribbon-text {
   grid-area: ribbon-text;
   text-transform: uppercase;
-  color: hsl(192, 37%, 48%);
+  color: hsl(192, 33.66%, 35.5%);
   font-weight: 900;
   letter-spacing: 0.25rem;
 }
@@ -522,7 +522,7 @@ footer {
   position: absolute;
   bottom: 0;
   z-index: -1;
-  background-color: hsl(192, 37%, 48%);
+  background-color: hsl(192, 33.66%, 35.5%);
 }
 .footer-background img {
   height: 100%;
