@@ -30,8 +30,10 @@ footer {
 }
 
 .footer-background {
-  height: 26.75rem; /* 428px */
-  width: 100%;
+  /*aspect ratio = 4.68*/
+  // height: 26.75rem; /* 428px */
+  // width: 100%;
+  aspect-ratio: 0.88;
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -83,7 +85,7 @@ footer {
   }
 
   .footer-background {
-    height: 19.25rem; /* 308px */
+    // height: 19.25rem; /* 308px */
+    aspect-ratio: 4.68;
   }
 }
-//RRC: Why the distortion of aspect ratio is happening?
