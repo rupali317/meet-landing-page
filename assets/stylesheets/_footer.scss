@@ -30,17 +30,17 @@ footer {
 }
 
 .footer-background {
-  height: 26.75rem; /* 428px */
-  width: 100%;
-  // aspect-ratio: 0.88;
+  // height: 26.75rem; /* 428px */
+  // width: 100%;
+  aspect-ratio: 0.88;
   position: absolute;
   bottom: 0;
   z-index: -1;
   background-color: $primary-color-1;
 
   img {
-    height: 100%;
-    width: 100%;
+    // height: 100%;
+    // width: 100%;
     mix-blend-mode: soft-light;
     opacity: 0.5;
   }
@@ -84,7 +84,7 @@ footer {
   }
 
   .footer-background {
-    height: 19.25rem; /* 308px */
-    // aspect-ratio: 4.68;
+    // height: 19.25rem; /* 308px */
+    aspect-ratio: 4.68;
   }
 }
