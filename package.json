@@ -1,5 +1,21 @@
 {
   "dependencies": {
     "sass": "^1.70.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.13",
+    "@storybook/addon-interactions": "^7.6.13",
+    "@storybook/addon-links": "^7.6.13",
+    "@storybook/blocks": "^7.6.13",
+    "@storybook/html": "^7.6.13",
+    "@storybook/html-vite": "^7.6.13",
+    "@storybook/test": "^7.6.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.13"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   }
 }
