@@ -147,10 +147,6 @@ In order to make it work for all browsers, this was the fix:
 
 - Investigate the aspect ratio issue. The image at the footer is displaying incorrect aspect ratio
 
-### Useful resources
-
-- []() TBD
-
 ## Author
 
 - Website - [Rupali Roy Choudhury](https://www.linkedin.com/in/rupali-rc/)
