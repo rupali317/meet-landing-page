@@ -5,11 +5,14 @@
     "group-chat-article group-chat-article";
   column-gap: $space-xs-4;
   row-gap: $space-base-4;
+  grid-template-columns: 18rem auto auto;
 
   img {
-    width: 11rem; /* 176px */
-    height: 8.46125rem; /* 135.38px */
-    // aspect-ratio: 1.3;
+    // width: 11rem; /* 176px */
+    // height: 8.46125rem; /* 135.38px */
+    // // aspect-ratio: 1.3;
+    width: 100%;
+    height: auto;
 
     &:first-child {
       grid-area: hero-left;
@@ -74,8 +77,8 @@
     justify-items: center;
 
     img {
-      width: 23rem; /* 368px */
-      height: 17.69rem; /* 283.07px */
+      // width: 23rem; /* 368px */
+      // height: 17.69rem; /* 283.07px */
     }
   }
 }
@@ -88,8 +91,8 @@
     padding-bottom: $space-xl-5;
 
     img {
-      width: 18rem; /* 288px */
-      height: 13.845625rem; /* 221.53px */
+      // width: 18rem; /* 288px */
+      // height: 13.845625rem; /* 221.53px */
     }
   }
 
